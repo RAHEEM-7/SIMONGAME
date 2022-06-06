@@ -1,0 +1,32 @@
+<%- include('header') %>
+<body id="dashboard">
+	<header style="background-color: rgba(153, 200, 25, 0.904);"> 
+		<nav class="main-nav">
+			<input type="checkbox" id="check">
+			<label for="check" class="menu-btn">
+				<i class="fas fa-bars"></i>
+			</label>
+			<img src="images/img1.jpg">
+			<span class="logo">SIMON GAME</span>
+			<ul class="navlinks">
+				<li>
+					<form action="/login" method="get">
+						<button type="submit" class="button">
+							<p>LOGIN</p>
+						</button>
+					</form>
+				</li>
+				<li>
+					<form action="/register" method="get">
+						<button type="submit" class="button">
+							<p>REGISTER</p>
+						</button>
+					</form>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<h1 id="hme" style="color: red;" >SIMON GAME</h1>
+	<div class="hm"><img src="images/img2.png"></div>
+<%- include("footer") -%>

@@ -1,0 +1,18 @@
+<%- include("navbar") -%>
+  <% const len = Math.min(10,scores.length); %>
+	<% scores.sort((a, b) => { %>
+	<%	return a.score - b.score; %>
+	<% }).reverse(); %>
+  <table id="tab">
+    <tr>
+      <th>Score</th>
+			<th>Date</th>
+    </tr>
+    <% for(let i = 0; i < len; i++) { %>
+      <tr>
+        <td><%= scores[i].score %></td>
+				<td><%= scores[i].date.toDateString() %></td>
+      </tr>
+    <% } %>
+  </table>
+<%- include("footer") -%>

@@ -1,0 +1,52 @@
+<%- include('header') %>
+<body>
+<header>
+	<nav class="main-nav">
+		<input type="checkbox" id="check">
+		<label for="check" class="menu-btn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<img src="images/img1.jpg">
+		<span class="logo">SIMON GAME</span>
+		<ul class="navlinks">
+			<li>
+				<span id="name" class="usrname"></span>
+			</li>
+			<li>
+				<form action="/game" method="get">
+					<button type="submit" class="button">
+						<p>HOME</p>
+					</button>
+				</form>
+			</li>
+			<li>
+				<form action="/rules" method="get">
+					<button type="submit" class="button">
+						<p>RULES</p>
+					</button>
+				</form>
+			</li>
+			<li>
+				<form action="/lvl" method="get">
+					<button type="submit" class="button">
+						<p>SCORES</p>
+					</button>
+				</form>
+			</li>
+			<li>
+				<form action="/leaderboard" method="get">
+					<button type="submit" class="button">
+						<p>LEADERBOARD</p>
+					</button>
+				</form>
+			</li>
+			<li>
+				<form action="/logout" method="get">
+					<button type="submit" class="button">
+						<p>LOGOUT</p>
+					</button>
+				</form>
+			</li>
+		</ul>
+	</nav>
+</header>

@@ -1,0 +1,14 @@
+<%- include("navbar") -%>
+	<table id="tab">
+		<tr>
+			<th>Name</th>
+			<th>Score</th>
+		</tr>
+		<% for(let i=0; i<data.length; i++) { %>
+		<tr>
+			<td><%= data[i].usr %></td>
+			<td><%= data[i].mx %></td>
+		</tr>
+		<% } %>
+	</table>
+<%- include("footer") -%>

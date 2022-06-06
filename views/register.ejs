@@ -1,0 +1,63 @@
+<%- include('header') %>
+<body id="REG">
+<div class="c1">
+	<div class="c2">
+		<h1 class="display-6">Create an account</h1>
+		<h1 class="display-6">Start Playing</h1>
+		<div><img class="ip" src="images/img3.png"></div>
+	</div>
+	<div class="c3">
+		<div class="container box">
+			<div class="d-flex justify-content-center h-100">
+				<div class="card">
+					<div class="card-header">
+						<h3>Sign In</h3>
+					</div>
+					<div class="card-body">
+						<!-- <form action="/register" method="POST">
+							<div class="mt-3 input-group form-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fas fa-user"></i></span>
+								</div>
+								<input name="username" type="text" class="form-control" placeholder="username">
+							</div>
+							<div class="mt-3 input-group form-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fas fa-key"></i></span>
+								</div>
+								<input name="password" type="password" class="form-control" placeholder="password">
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Register" class="btn float-right login_btn">
+							</div>
+						</form> -->
+						<div class="mt-3 input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input id="user" name="username" type="text" class="form-control" placeholder="username">
+						</div>
+						<div class="mt-3 input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input id="pasw" name="password" type="password" class="form-control" placeholder="password">
+						</div>
+						<div class="form-group">
+							<button id="reg" class="btn float-right login_btn" onclick="registerUser()">Register</button>
+						</div>
+					</div>
+					<div class="card-footer">
+						<div class="d-flex justify-content-center links">
+							<a href="/login">LogIn</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="present">
+
+		</div>
+	</div>
+</div>
+<%- include('footer') %>
